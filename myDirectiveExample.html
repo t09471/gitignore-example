@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
+    <script type="text/javascript" src="Scripts/scripts.js"></script>
+
+</head>
+
+<body>
+    <h1>Sample Directive Application</h1>
+    <h4>List of countries with capital</h4>
+    <div ng-app="myApp" ng-controller="countryController as countryCtrl">
+        <ol>
+            <li ng-repeat="country in countryCtrl.countries">
+                {{country.name + ", " + country.capital}}
+            </li>
+        </ol>
+    
+    </div>
+
+</body>
+
+</html>
